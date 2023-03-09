@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // listStudent = [8, 4, 5, 3, 2];
+        // console.log(listStudent.slice(1, 4));
+
+//------------------------------------------------
+
+        // let x = [5, 6, 7, 8];
+
+        // for (let a in x) {
+
+        //     if (x[a] % 2 == 0) {
+
+        //         // break;
+
+        //     }
+
+        //     console.log(a);
+
+        // }
+
+//-------------------------------------------------------------
+
+        // let a = [5, 6, 7, 8];
+
+        // for (let i = 0; i < a.length; i++) {
+
+        //     if (a[i] % 2 == 0) {
+
+        //         continue;
+
+        //     } console.log(i);
+
+        // }
+
+        // let x = -1; let a = [1, 2, 3, 4];
+
+        // for (let i = 0; i < a.length; i++) {
+
+        //     if (a[i] < x) {
+
+        //         x = a[i];
+
+        //     }
+        // }
+
+        // console.log(x)
+//-------------------------------------------------------------
+
+        // let x = -1; let a = [1, 2, 3, 4];
+
+        // for (let i = 0; i < a.length; i++) {
+
+        //     if (a[i] < x) {
+
+        //         x = a[i];
+
+        //     }
+        // }
+
+        // console.log(x)
+
+//---------------------------------------------------------------------------------------------------
+//----------------Tìm giá trị lớn nhất trong mảng. Hiển thị tất cả các phần tử lớn nhất--------------
+        // let array = [1,5,8,9,9,5,9,7,7];
+        // let max = array[0];
+        // let index = 1;
+        // for (let i = 0; i < array.length; i++) {
+        //     if (array[i]>max){
+        //         max = array[i];
+        //         index += 1;
+        //     }
+            
+        // }
+        // console.log(max);
+        
+        // document.write(`Giá trị lớn nhất ${max} ở vị trí ${index}`);
+        
+//---------------------------------------------------------------------------------------------------
+//Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2 số chẵn.
+//Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
+
+    // const num = prompt("Enter your number: ");
+    // const str = [];
+    // const result = [];
+    // for (let i =0; i<=num.length; i++){
+    //     if(num[i]%2===0 && num[i+1]%2===0){
+    //         result.push(num[i], "-")
+    //     }else{
+    //         result.push(num[i]);
+    //     }
+    // }
+    // document.write(result.join(" "));
+
+//---------------------------------------------------------------------------------------------------
+//Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường
+//trong chuỗi vừa nhập sang thành dạng chữ hoa.
+
+    let a = "Hello EveryOne";
+    let arr = [];
+    for (let i=0; i<a.length; i++){
+        if(a[i]>='a'){
+            arr.push(a[i].toUpperCase());
+        }else{
+            arr.push(a[i].toLowerCase());
+        }
+    }
+    document.write(arr.join(" "));
+
+    </script>
+
+</body>
+
+</html>
