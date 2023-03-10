@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faking Textarea</title>
+</head>
+<body>
+    <h3>WHAT DO YOU WANT TO SAY TO ME?</h3>
+    <textarea oninput="fake()" id="txt" cols="70" rows="20"></textarea>
+
+    <script>
+        let array=[];
+        let strArr = "Loving can hurt, loving can hurt sometimes. But it's the only thing that I know. When it gets hard, you know it can get hard sometimes. It is the only thing makes us feel alive. We keep this love in a photograph. We made these memories for ourselves. Where our eyes are never closing. Hearts are never broken. And time's forever frozen, still. So you can keep me. Inside the pocket of your ripped jeans. Holding me closer 'til our eyes meet. You won't ever be alone, wait for me to come home. Loving can heal, loving can mend your soul. And it's the only thing that I know, know. I swear it will get easier. Remember that with every piece of ya. Hmm, and it's the only thing we take with us when we die";
+        array = strArr.split("");
+        let str = "";
+        function fake(){
+            let text = document.getElementById("txt").value;
+            for (let i=0; i<=text.length; i++){
+                str += array[i];
+                if (i== array.length){
+                    str = "";
+                }
+            }
+            document.getElementById("txt").value = str;
+            str = "";
+        }
+
+    </script>
+</body>
+</html>
